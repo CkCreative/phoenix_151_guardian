@@ -1,4 +1,6 @@
-# Barebones Phoenix 1.5.1 Project Using Guardia for Authentication
+# Barebones Phoenix 1.5.1 Project Using Guardian for Authentication
+
+The protected route is `/products`. All other routes are free to access.
 
 > For some weird reason, the project won't compile under Windows since it requires Argon2_elixir (which requires native compilation that is not easy to set up).
 
@@ -20,7 +22,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bas
 nvm install --lts
 ```
 
-In case you need to access the postgres that you installed inside Windows, you can do:
+In case you need to access a PostgreSQL instance that you installed inside Windows, you can do:
 
 ```bash
 sudo apt install postgresql-client-common
